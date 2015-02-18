@@ -18,9 +18,9 @@ if (!defined('APPPATH'))
                 <br/>
                 <strong>{name}</strong><br/><br/>
                 <img src="{image}" width="240px" height="160px"/><br/>&nbsp;
-                 
+                 <strong>{discription}</strong><br/><br/>
             </div>
-             <strong>{discription}</strong><br/><br/>
+             
             
         </div>
         {/articles}
