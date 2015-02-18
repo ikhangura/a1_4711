@@ -12,7 +12,7 @@
         <script src="../../../assets/js/jquery-1.11.1.min.js" type="text/javascript"></script>
     </head>
     <body>
-        <a href="/"><img class="banner" src="data/images/banner.jpg"/></a>
+        <a href="/"><img  class="banner" src="data/images/banner.jpg" ></a>
        <nav class="navbar">
             <div class="navbar-inner">
                 <span class="brand">Hawaii</span>
