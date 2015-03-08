@@ -39,6 +39,13 @@
 */
 
 $route['default_controller'] = "welcome";
+$route['Home'] = "home";
+$route['Entertainment'] = "home/sublist/e";
+$route['Eatout'] = "home/sublist/t";
+$route['Accomodation'] = "home/sublist/f";
+$route['Shopping'] = "home/sublist/s";
+$route['SightSeeing'] = "home/sublist/w";
+$route['admin'] = "admin";
 $route['404_override'] = '';
 
 

@@ -18,9 +18,7 @@ class Accomodation extends Application{
     function index() {
         //include header footer on this pagebody
         $this->data['pagebody'] = 'accomodation';
-        $this->data['header'] = '/includes/header';
-        $this->data['footer'] = 'includes/footer';
-        
+       
         //this will grab all attractions that fall under the category lodging
         $articles = $this->touristpoint->all_for_cat('resorts');
         $this->data['articles'] = $articles;

@@ -19,9 +19,7 @@ class AboutUs extends Application {
     function index() {
         //Header footer and about page 
         $this->data['pagebody'] = 'aboutus';
-        $this->data['header'] = '/includes/header';
-        $this->data['footer'] = 'includes/footer';      
-        
+       
         
         //display the view page
         $this->render();

@@ -19,8 +19,7 @@ class Planning extends Application {
     function index() {
         //Header footer and about page 
         $this->data['pagebody'] = 'planning';
-        $this->data['header'] = '/includes/header';
-        $this->data['footer'] = 'includes/footer';      
+           
         
         
         //display the view page

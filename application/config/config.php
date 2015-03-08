@@ -6,8 +6,15 @@ if (!defined('BASEPATH'))
 // the menu basics (text navbar)
 $config['menu_choices'] = array(
     'menudata' => array(
-        array('name' => 'First', 'link' => '/first'),
-        array('name' => 'Last', 'link' => '/last'),
+        array('name' => 'Home', 'link' => '/'),
+        array('name' => 'Attractions', 'link' => '/Home'),
+        array('name' => 'Entertainment', 'link' => '/Entertainment'),
+        array('name' => 'Eat Out', 'link' => '/Eatout'),
+        array('name' => 'Resorts', 'link' => '/Accomodation'),
+        array('name' => 'Shopping', 'link' => '/Shopping'),
+        array('name' => 'Natural Secene', 'link' => '/SightSeeing'),
+        array('name' => 'About', 'link' => '/about'),
+        array('name' => 'Admin', 'link' => '/admin'),
         )
     );
 
@@ -103,7 +110,7 @@ $config['charset'] = 'UTF-8';
   | setting this variable to TRUE (boolean).  See the user guide for details.
   |
  */
-$config['enable_hooks'] = FALSE;
+$config['enable_hooks'] = TRUE;
 
 
 /*
@@ -236,7 +243,7 @@ $config['cache_path'] = '';
   | MUST set an encryption key.  See the user guide for info.
   |
  */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'testing12test1234';
 
 /*
   |--------------------------------------------------------------------------
@@ -261,7 +268,7 @@ $config['sess_expiration'] = 7200;
 $config['sess_expire_on_close'] = FALSE;
 $config['sess_encrypt_cookie'] = FALSE;
 $config['sess_use_database'] = FALSE;
-$config['sess_table_name'] = 'ci_sessions';
+$config['sess_table_name'] = 'ci_sessions';     // yes, use a database to store the session container
 $config['sess_match_ip'] = FALSE;
 $config['sess_match_useragent'] = TRUE;
 $config['sess_time_to_update'] = 300;
