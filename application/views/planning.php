@@ -17,7 +17,7 @@ if (!defined('APPPATH'))
               <h5>Design</h5>
             <p>
                The initial sketchs for this web app has been provided below in a link.</br>    
-               <strong><a href="data/images/planning.png">Planning Sketchs</a></strong> 
+               <strong><a href="data/images/Planning.png">Planning Sketchs</a></strong> 
              </p>
             <h4 style='color:brown'>Use Cases</h4>
                  <p> Every body love vacations, What if we have some free days/week and some savings, the first 

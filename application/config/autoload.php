@@ -29,7 +29,7 @@
 
 /*
 | -------------------------------------------------------------------
-|  Auto-load Packages
+|  Auto-load Packges
 | -------------------------------------------------------------------
 | Prototype:
 |
@@ -52,9 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('database','parser');
-
-
+$autoload['libraries'] = array('database', 'parser', 'session');
 /*
 | -------------------------------------------------------------------
 |  Auto-load Helper Files
@@ -63,7 +61,7 @@ $autoload['libraries'] = array('database','parser');
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-
+$autoload['drivers'] = array('session');
 $autoload['helper'] = array('url');
 
 
@@ -109,7 +107,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('touristpoint');
+$autoload['model'] = array('attractions', 'categories', 'sub');
 
 
 /* End of file autoload.php */

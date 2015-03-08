@@ -1,14 +1,10 @@
 <?php
-    if (!defined('APPPATH'))
-        exit('No direct script access allowed');
-
 
 /**
- * Our homepage. Displays the most recent and beautiful view 
- * Uses the touristpoint model which is using database
+ * Our homepage. Show a table of all the author pictures. Clicking on one should show their quote.
+ * Our quotes model has been autoloaded, because we use it everywhere.
  * 
- * @Inderjeet Khangura
- * controllers/welcome.php
+ * controllers/Welcome.php
  *
  * ------------------------------------------------------------------------
  */
@@ -22,22 +18,22 @@ class Welcome extends Application {
     //  The normal pages
     //-------------------------------------------------------------
 
-  function index() {
-        //include header footer on this pagebody
-        $this->data['pagebody'] = 'home';
-        $this->data['header'] = '/includes/header';
-        $this->data['footer'] = 'includes/footer';
+    function index() {
+        $this->data['pagebody'] = 'newest';    // this is the view we want shown
         
-        //this will grab all attractions that fall under the category lodging
-        $articles = $this->touristpoint->all();
-      
-        $this->data['articles'] = $articles;
+        // build the list of places, to pass on to our view
+        $source = $this->attractions->newest();
         
-        //finally display the page after parsing the information
+        
+        //send the attributes to our newest view
+        $this->data['name'] = $source->attr_name;
+        $this->data['pic'] = $source->image_name;
+        $this->data['description'] = $source->description;
+
         $this->render();
-        
     }
+
 }
 
-/* End of file welcome.php */
-/* Location: application/controllers/welcome.php */
+/* End of file main.php */
+/* Location: application/controllers/main.php */
